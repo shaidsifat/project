@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Index</title>
+</head>
+
+<body>
+
+    <form name="Yourname" id="id_form" action="" method="get">
+        <select name="catagory" id="id_catagory" form="id_yourformname">
+
+            {%for mobile in mobiles %}
+
+
+            <option value="{{ mobile.id}}"> {{ mobile.id}}</option>
+
+            {% endfor %}
+        </select>
+
+
+    </form>
+</body>
+
+</html>
